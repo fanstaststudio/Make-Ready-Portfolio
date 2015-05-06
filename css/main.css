@@ -5661,7 +5661,8 @@ body .background-box {
       height: 100vh; } }
 body .container-fluid {
   padding-left: 0px;
-  padding-right: 0px; }
+  padding-right: 0px;
+  background-color: #222; }
   body .container-fluid nav {
     padding: 10px 0px;
     background-color: #333333; }
@@ -5696,24 +5697,25 @@ body .container-fluid {
     margin-bottom: 0px;
     padding-top: 5vh;
     height: 600px;
-    background-image: url("http://static.pexels.com/wp-content/uploads/2015/04/australia-capital-city-5281.jpg");
+    background-image: none;
+    background-color: #000;
     background-size: cover; }
     @media screen and (max-width: 480px) {
       body .container-fluid .blog {
         height: 300px;
-          height-padding-top: 8vh; } }
+        padding-top: 60px; } }
     @media screen and (min-width: 481px) {
       body .container-fluid .blog {
         height: 300px;
-        padding-top: 9.5vh; } }
+        padding-top: 60px; } }
     @media screen and (min-width: 651px) {
       body .container-fluid .blog {
         height: 600px;
-        padding-top: 20vh; } }
+        padding-top: 145px; } }
     @media screen and (min-width: 1051px) {
       body .container-fluid .blog {
         height: 80vh;
-        padding-top: 27vh; } }
+        padding-top: 170px; } }
 body .headline_blog {
   max-width: 950px;
   margin: 0 auto; }
