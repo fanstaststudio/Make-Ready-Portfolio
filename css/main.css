@@ -5676,57 +5676,84 @@ body .container-fluid {
   body .container-fluid .blog {
     border-radius: 0px;
     margin-bottom: 0px;
-    padding-top: 28vh;
+    padding-top: 5vh;
     height: 600px;
     background-image: url("http://static.pexels.com/wp-content/uploads/2015/04/australia-capital-city-5281.jpg");
     background-size: cover; }
     @media screen and (max-width: 480px) {
       body .container-fluid .blog {
-        height: 300px; } }
+        height: 300px;
+          height-padding-top: 8vh; } }
     @media screen and (min-width: 481px) {
       body .container-fluid .blog {
-        height: 300px; } }
+        height: 300px;
+        padding-top: 9.5vh; } }
     @media screen and (min-width: 651px) {
       body .container-fluid .blog {
-        height: 600px; } }
+        height: 600px;
+        padding-top: 20vh; } }
     @media screen and (min-width: 1051px) {
       body .container-fluid .blog {
-        height: 80vh; } }
+        height: 80vh;
+        padding-top: 27vh; } }
+body .headline_blog {
+  max-width: 950px;
+  margin: 0 auto; }
 body .blog h1 {
   color: #fff;
   text-align: center;
   line-height: 70px;
-  margin-top: 0px; }
+  margin-top: 0px;
+  font-size: 45px; }
+  @media screen and (max-width: 480px) {
+    body .blog h1 {
+      line-height: 25px;
+      font-size: 25px; } }
+  @media screen and (min-width: 481px) {
+    body .blog h1 {
+      line-height: 25px;
+      font-size: 25px; } }
+  @media screen and (min-width: 651px) {
+    body .blog h1 {
+      font-size: 65px;
+      line-height: 70px; } }
+  @media screen and (min-width: 1051px) {
+    body .blog h1 {
+      font-size: 65px;
+      line-height: 70px; } }
 body .blog p {
   color: #fff;
   text-align: center;
   margin-bottom: 5px; }
 body .border {
   margin: 0 auto;
-  width: 865px;
+  width: 92%;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff; }
 body .centered {
   margin-top: 20px;
   text-align: center;
   background-color: none; }
+body .glyphicon {
+  font-size: 20px; }
 body .btn.outline {
   background: none;
-  padding: 5px 7px;
-  padding-bottom: 2px; }
+  height: 50px;
+  width: 50px;
+  padding-left: 13px;
+  padding-bottom: 2px;
+  opacity: 0.4; }
 body .btn-primary.outline {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   color: #fff;
-  border-radius: 35px; }
+  border-radius: 60px; }
 body .btn-primary.outline:hover, body .btn-primary.outline:focus, body .btn-primary.outline:active, body .btn-primary.outline.active, body .open > .dropdown-toggle.btn-primary {
-  color: #222;
-  border-color: #222;
-  border-radius: 35px; }
+  opacity: 1; }
 body .btn-primary.outline:active, body .btn-primary.outline.active {
-  border-color: #222;
-  color: #222;
+  border-color: #ccc;
+  color: #ccc;
   box-shaddow: none;
-  border-radius: 35px; }
+  border-radius: 60px; }
 body .wrap {
   overflow: hidden; }
   body .wrap figure.tileBox {
