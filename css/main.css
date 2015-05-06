@@ -5654,6 +5654,7 @@ body .container-fluid {
         color: #fff; }
   body .container-fluid .jumbotron {
     border-radius: 0px;
+    margin-bottom: 0px;
     height: 600px;
     background-image: url("http://static.pexels.com/wp-content/uploads/2015/04/australia-capital-city-5281.jpg");
     background-size: cover; }
@@ -5669,6 +5670,60 @@ body .container-fluid {
     @media screen and (min-width: 1051px) {
       body .container-fluid .jumbotron {
         height: 100vh; } }
+  body .container-fluid .blog {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    padding-top: 28vh;
+    height: 600px;
+    background-image: url("http://static.pexels.com/wp-content/uploads/2015/04/australia-capital-city-5281.jpg");
+    background-size: cover; }
+    @media screen and (max-width: 480px) {
+      body .container-fluid .blog {
+        height: 300px; } }
+    @media screen and (min-width: 481px) {
+      body .container-fluid .blog {
+        height: 300px; } }
+    @media screen and (min-width: 651px) {
+      body .container-fluid .blog {
+        height: 600px; } }
+    @media screen and (min-width: 1051px) {
+      body .container-fluid .blog {
+        height: 80vh; } }
+body .blog h1 {
+  color: #fff;
+  text-align: center;
+  line-height: 70px;
+  margin-top: 0px; }
+body .blog p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5px; }
+body .border {
+  margin: 0 auto;
+  width: 865px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff; }
+body .centered {
+  margin-top: 20px;
+  text-align: center;
+  background-color: none; }
+body .btn.outline {
+  background: none;
+  padding: 5px 7px;
+  padding-bottom: 2px; }
+body .btn-primary.outline {
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 35px; }
+body .btn-primary.outline:hover, body .btn-primary.outline:focus, body .btn-primary.outline:active, body .btn-primary.outline.active, body .open > .dropdown-toggle.btn-primary {
+  color: #222;
+  border-color: #222;
+  border-radius: 35px; }
+body .btn-primary.outline:active, body .btn-primary.outline.active {
+  border-color: #222;
+  color: #222;
+  box-shaddow: none;
+  border-radius: 35px; }
 body .wrap {
   overflow: hidden; }
   body .wrap .box {
