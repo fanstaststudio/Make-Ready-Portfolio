@@ -9,14 +9,33 @@ $small-break: 651px
 $large-break: 1051px
 
 body
+	
 	.row 
 		margin-left: 0px
 		margin-right: 0px
+		
+	nav 
+		position: fixed
+		top: 0
+		height: 50px
+		width: 100%
+		background-color: #000
+		z-index: 1
+		.nav-logo
+			float: left
+			h1
+				margin: 0 0
+		.nav-topics
+			float: right
+			ul 
+				li 
+					display: inline-block
 		
 	.background-box
 		position: relative
 		height: 600px
 		overflow: hidden
+		z-index: -2
 		background:
 			image: url('../images/background-image.jpg')
 			size: cover
@@ -153,7 +172,7 @@ body
 
 	
 	.wrap
-		overflow: hidden				
+		overflow: hidden			
 
 		figure.tileBox
 			float: left

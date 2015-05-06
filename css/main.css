@@ -5638,10 +5638,26 @@ button.close {
 body .row {
   margin-left: 0px;
   margin-right: 0px; }
+body nav {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #000;
+  z-index: 1; }
+  body nav .nav-logo {
+    float: left; }
+    body nav .nav-logo h1 {
+      margin: 0 0; }
+  body nav .nav-topics {
+    float: right; }
+    body nav .nav-topics ul li {
+      display: inline-block; }
 body .background-box {
   position: relative;
   height: 600px;
   overflow: hidden;
+  z-index: -2;
   background-image: url("../images/background-image.jpg");
   background-size: cover;
   background-position: top center;
