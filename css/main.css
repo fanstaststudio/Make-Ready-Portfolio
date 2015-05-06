@@ -5673,6 +5673,24 @@ body .container-fluid {
       display: inline; }
       body .container-fluid nav .nav-categories li a {
         color: #fff; }
+  body .container-fluid .jumbotron {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    height: 600px;
+    background-image: url("http://static.pexels.com/wp-content/uploads/2015/04/australia-capital-city-5281.jpg");
+    background-size: cover; }
+    @media screen and (max-width: 480px) {
+      body .container-fluid .jumbotron {
+        height: 300px; } }
+    @media screen and (min-width: 481px) {
+      body .container-fluid .jumbotron {
+        height: 300px; } }
+    @media screen and (min-width: 651px) {
+      body .container-fluid .jumbotron {
+        height: 600px; } }
+    @media screen and (min-width: 1051px) {
+      body .container-fluid .jumbotron {
+        height: 100vh; } }
   body .container-fluid .blog {
     border-radius: 0px;
     margin-bottom: 0px;
@@ -5753,7 +5771,7 @@ body .btn-primary.outline:active, body .btn-primary.outline.active {
   border-color: #ccc;
   color: #ccc;
   box-shaddow: none;
-  border-radius: 60px; }
+  border-radius: 35px; }
 body .wrap {
   overflow: hidden; }
   body .wrap figure.tileBox {
