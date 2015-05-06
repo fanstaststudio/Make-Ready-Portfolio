@@ -50,6 +50,7 @@ body
 				height: 600px
 			@media screen and (min-width: $large-break)
 				height: 100vh
+<<<<<<< HEAD
 			
 		.blog
 			border-radius: 0px
@@ -117,6 +118,10 @@ body
 
 		
 		
+=======
+	
+	// Tile Grid Styling
+>>>>>>> origin/master
 	.wrap
 		overflow: hidden
 		
@@ -132,6 +137,21 @@ body
 				width: 33.3%
 			@media screen and (min-width: $large-break)
 				width: 25%
+				
 			.boxInner
+				color: #fff
 				img
 					width: 100%
+				.titleBox
+					position: absolute
+					top: 50%
+				.descriptionBox
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+				&:hover
+					.titleBox
+						color: #000
+					.descriptionBox
+						color: #000

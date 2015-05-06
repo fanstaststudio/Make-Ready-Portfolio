@@ -5742,5 +5742,19 @@ body .wrap {
     @media screen and (min-width: 1051px) {
       body .wrap .box {
         width: 25%; } }
-    body .wrap .box .boxInner img {
-      width: 100%; }
+    body .wrap .box .boxInner {
+      color: #fff; }
+      body .wrap .box .boxInner img {
+        width: 100%; }
+      body .wrap .box .boxInner .titleBox {
+        position: absolute;
+        top: 50%; }
+      body .wrap .box .boxInner .descriptionBox {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%; }
+      body .wrap .box .boxInner:hover .titleBox {
+        color: #000; }
+      body .wrap .box .boxInner:hover .descriptionBox {
+        color: #000; }
