@@ -12,6 +12,25 @@ body
 	.row 
 		margin-left: 0px
 		margin-right: 0px
+		
+	.background-box
+		position: relative
+		height: 600px
+		overflow: hidden
+		background:
+			image: url('../images/background-image.jpg')
+			size: cover
+			position: top center
+			attachment: fixed
+			repeat: no-repeat
+		@media screen and (max-width: $phone-break)
+			height: 300px
+		@media screen and (min-width: $tablet-break)
+			height: 300px
+		@media screen and (min-width: $small-break)
+			height: 600px
+		@media screen and (min-width: $large-break)
+			height: 100vh
 	
 	.container-fluid
 		padding-left: 0px
@@ -34,24 +53,6 @@ body
 					a 
 						color: #fff
 						
-		.jumbotron
-			border-radius: 0px
-			margin-bottom: 0px
-
-			height: 600px
-			background:
-				image: url('http://static.pexels.com/wp-content/uploads/2015/04/australia-capital-city-5281.jpg')
-				size: cover
-			@media screen and (max-width: $phone-break)
-				height: 300px
-			@media screen and (min-width: $tablet-break)
-				height: 300px
-			@media screen and (min-width: $small-break)
-				height: 600px
-			@media screen and (min-width: $large-break)
-				height: 100vh
-<<<<<<< HEAD
-			
 		.blog
 			border-radius: 0px
 			margin-bottom: 0px
@@ -115,20 +116,16 @@ body
 		color: #222
 		box-shaddow: none
 		border-radius: 35px
-
-		
-		
-=======
 	
 	// Tile Grid Styling
->>>>>>> origin/master
 	.wrap
-		overflow: hidden
-		
-		.box
+		overflow: hidden				
+
+		figure.tileBox
 			float: left
 			position: relative
 			width: 20%
+			text-align: center
 			@media screen and (max-width: $phone-break)
 				width: 100%
 			@media screen and (min-width: $tablet-break)
@@ -137,21 +134,47 @@ body
 				width: 33.3%
 			@media screen and (min-width: $large-break)
 				width: 25%
+			img
+				width: 100%
+			figcaption::before
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%)
+				content: ''
+				opacity: 0
+				transform: translate3d(0, 50%, 0)
 				
-			.boxInner
+			h2
+				position: absolute
+				top: 50%
+				left: 0
+				width: 100%
 				color: #fff
-				img
-					width: 100%
-				.titleBox
-					position: absolute
-					top: 50%
-				.descriptionBox
-					position: absolute
-					bottom: 0
-					left: 0
-					width: 100%
-				&:hover
-					.titleBox
-						color: #000
-					.descriptionBox
-						color: #000
+				transition: transform 0.35s, color 0.35s
+				transform: translate3d(0, -50%, 0)
+				
+			figcaption::before
+				transition: opacity 0.35s, transform 0.35s
+				
+			p 
+				transition: opacity 0.35s, transform 0.35s
+				position: absolute
+				bottom: 0
+				left: 0
+				padding: 2em
+				width: 100%
+				opacity: 0
+				transform: translate3d(0, 10px, 0)
+			
+			&:hover
+				h2
+					color: #fff
+					transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0)
+				figcaption::before, p
+					color: #fff
+					opacity: 1
+					transform: translate3d(0, 0, 0)
+				
