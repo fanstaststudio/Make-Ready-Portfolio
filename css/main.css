@@ -5849,7 +5849,7 @@ body .container-fluid {
         padding-top: 145px; } }
     @media screen and (min-width: 1051px) {
       body .container-fluid .blog {
-        height: 80vh;
+        height: 600px;
         padding-top: 170px; } }
 body .headline_blog {
   max-width: 950px;
