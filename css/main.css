@@ -5776,8 +5776,11 @@ body .btn-primary.outline:active, body .btn-primary.outline.active {
   border-radius: 35px;
   border-radius: 60px; }
 body .blog_content {
-  width: 500px;
-  margin: 0 auto; }
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 70px; }
 body .wrap {
   overflow: hidden; }
   body .wrap figure.tileBox {
