@@ -5668,7 +5668,7 @@ body .container-fluid {
         height: 600px; } }
     @media screen and (min-width: 1051px) {
       body .container-fluid .jumbotron {
-        height: 900px; } }
+        height: 100vh; } }
 body .wrap {
   overflow: hidden; }
   body .wrap .box {
