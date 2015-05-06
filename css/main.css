@@ -5773,7 +5773,11 @@ body .btn-primary.outline:active, body .btn-primary.outline.active {
   border-color: #ccc;
   color: #ccc;
   box-shaddow: none;
-  border-radius: 35px; }
+  border-radius: 35px;
+  border-radius: 60px; }
+body .blog_content {
+  width: 500px;
+  margin: 0 auto; }
 body .wrap {
   overflow: hidden; }
   body .wrap figure.tileBox {
