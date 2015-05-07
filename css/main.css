@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5635,6 +5636,10 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+body h1, body h2, body h3 {
+  font-family: "Amatic SC", cursive; }
+body h2 {
+  font-size: 50px; }
 body .row {
   margin-left: 0px;
   margin-right: 0px; }
@@ -5647,12 +5652,33 @@ body nav {
   z-index: 1; }
   body nav .nav-logo {
     float: left; }
+    body nav .nav-logo img {
+      padding-top: 10px;
+      height: 40px;
+      margin-left: 20px; }
     body nav .nav-logo h1 {
       margin: 0 0; }
   body nav .nav-topics {
+    margin-top: 15px;
+    margin-right: 20px;
     float: right; }
     body nav .nav-topics ul li {
-      display: inline-block; }
+      display: inline-block;
+      padding-right: 20px;
+      width: 70px;
+      text-align: center; }
+      body nav .nav-topics ul li a {
+        color: #fff;
+        font-weight: 400;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in; }
+        body nav .nav-topics ul li a:hover {
+          color: #91bb41;
+          text-decoration: none;
+          font-weight: 800; }
 body .background-box {
   position: relative;
   height: 600px;
@@ -5675,6 +5701,25 @@ body .background-box {
   @media screen and (min-width: 1051px) {
     body .background-box {
       height: 100vh; } }
+  body .background-box .header-text {
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    z-index: 2; }
+    body .background-box .header-text h1 {
+      font-size: 200px;
+      color: #fff;
+      font-family: "Amatic SC", cursive; }
+    body .background-box .header-text hr {
+      height: 4px !important;
+      width: 560px;
+      background-color: #fff; }
+    body .background-box .header-text h2 {
+      font-size: 100px;
+      color: #fff;
+      font-family: "Amatic SC", cursive; }
 body .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
@@ -5745,7 +5790,7 @@ body .container-fluid {
             display: block; }
           body .container-fluid .ribbon .rowribbon h2 {
             margin: 2px 0px 0px 0px;
-            font-size: 16px; }
+            font-size: 40px; }
           body .container-fluid .ribbon .rowribbon ul li {
             display: inline-block;
             vertical-align: top; }
@@ -5768,7 +5813,7 @@ body .container-fluid {
             display: none; }
           body .container-fluid .ribbon .rowribbon h2 {
             margin: 2px 0px 0px 0px;
-            font-size: 18px; }
+            font-size: 40px; }
           body .container-fluid .ribbon .rowribbon p {
             margin-top: 15px; }
           body .container-fluid .ribbon .rowribbon ul li {
@@ -5792,7 +5837,7 @@ body .container-fluid {
             width: 160px;
             height: 160px; }
           body .container-fluid .ribbon .rowribbon h2 {
-            font-size: 22px; }
+            font-size: 30px; }
           body .container-fluid .ribbon .rowribbon p {
             margin-top: 15px; }
           body .container-fluid .ribbon .rowribbon ul li {
@@ -5802,7 +5847,7 @@ body .container-fluid {
             margin: 10px 0px 0px 40px;
             text-align: left;
             padding-bottom: 50px;
-            width: 248px; }
+            width: 250px; }
           body .container-fluid .ribbon .rowribbon hr {
             margin-left: 0px;
             margin-top: 10px;
@@ -5812,7 +5857,7 @@ body .container-fluid {
           width: 220px;
           height: 220px; }
         body .container-fluid .ribbon .rowribbon h2 {
-          font-size: 22px; }
+          font-size: 40px; }
         body .container-fluid .ribbon .rowribbon p {
           margin-top: 25px; }
         body .container-fluid .ribbon .rowribbon hr {
@@ -5826,7 +5871,7 @@ body .container-fluid {
           text-align: center;
           padding-top: 20px;
           padding-bottom: 40px;
-          width: 248px; } }
+          width: 250px; } }
   body .container-fluid .blog {
     border-radius: 0px;
     margin-bottom: 0px;
