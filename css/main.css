@@ -5723,7 +5723,7 @@ body .background-box {
     top: 25%;
     z-index: 2; }
   body .background-box .aboutus-text {
-    background-color: #222;
+    background-color: #000;
     height: 200px;
     position: absolute;
     text-align: center;
@@ -5781,23 +5781,23 @@ body .background-box {
     @media screen and (min-width: 1051px) {
       body .background-box #aboutus_description {
         font-size: 30px; } }
-    body .background-box #aboutus_description h1 {
-      font-size: 200px;
-      color: #fff;
-      font-family: "Amatic SC", cursive; }
-    body .background-box #aboutus_description hr {
-      height: 4px !important;
-      width: 560px;
-      background-color: #fff; }
-    body .background-box #aboutus_description h2 {
-      font-size: 100px;
-      color: #fff;
-      font-family: "Amatic SC", cursive; }
-    body .background-box #aboutus_description h3 {
-      font-size: 25px;
-      margin-top: 0px;
-      color: #fff;
-      font-family: "Amatic SC", cursive; }
+  body .background-box h1 {
+    font-size: 200px;
+    color: #fff;
+    font-family: "Amatic SC", cursive; }
+  body .background-box hr {
+    height: 4px !important;
+    width: 560px;
+    background-color: #fff; }
+  body .background-box h2 {
+    font-size: 100px;
+    color: #fff;
+    font-family: "Amatic SC", cursive; }
+  body .background-box h3 {
+    font-size: 25px;
+    margin-top: 0px;
+    color: #fff;
+    font-family: "Amatic SC", cursive; }
 body .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
