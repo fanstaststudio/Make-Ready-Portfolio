@@ -5638,6 +5638,15 @@ button.close {
     display: none !important; } }
 body h1, body h2, body h3 {
   font-family: "Amatic SC", cursive; }
+body .grey_txt {
+  color: #999; }
+body a {
+  text-decoration: none;
+  color: #91bb41; }
+  body a:hover {
+    color: #9bc544; }
+  body a:visited {
+    color: #91bb41; }
 body h2 {
   font-size: 50px; }
 body .row {
@@ -5800,13 +5809,13 @@ body .background-box {
     font-family: "Amatic SC", cursive; }
 body .container-fluid {
   padding-left: 0px;
-  padding-right: 0px;
-  background-color: #222; }
+  padding-right: 0px; }
   body .container-fluid footer {
-    height: 400px;
+    height: 380px;
     background-color: #000;
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    padding-top: 40px; }
     body .container-fluid footer h1 {
       font-size: 40px;
       padding-top: 60px;
@@ -5952,7 +5961,7 @@ body .container-fluid {
         body .container-fluid .ribbon .rowribbon h2 {
           font-size: 40px; }
         body .container-fluid .ribbon .rowribbon p {
-          margin-top: 25px; }
+          margin-top: 20px; }
         body .container-fluid .ribbon .rowribbon hr {
           margin: auto;
           margin-top: 10px;
@@ -5966,49 +5975,55 @@ body .container-fluid {
           padding-bottom: 40px;
           width: 250px; } }
       body .container-fluid .ribbon .rowribbon .yd_kon {
-        height: 120px;
-        width: 112.5px;
+        height: 130px;
+        width: 100%;
+        min-width: 160px;
         margin-right: 5px;
         background-image: url("../images/konikon-phone.svg");
         background-position: center;
-        background-size: 112.5px 120px;
         background-repeat: no-repeat; }
       body .container-fluid .ribbon .rowribbon .yd_kon_txt {
         max-width: 90%;
         padding-bottom: 40px; }
-      body .container-fluid .ribbon .rowribbon .yd_kon_txt p {
-        padding-top: 15px; }
       @media screen and (min-width: 480px) {
         body .container-fluid .ribbon .rowribbon .yd_kon_txt {
           text-align: center; }
         body .container-fluid .ribbon .rowribbon .konrib ul li {
-          display: block; } }
+          display: block; }
+        body .container-fluid .ribbon .rowribbon .yd_kon {
+          display: default;
+          margin: auto;
+          background-size: 180px; } }
       @media screen and (min-width: 481px) {
         body .container-fluid .ribbon .rowribbon .yd_kon_txt {
           text-align: center;
           max-width: 80%;
           margin: auto; }
-        body .container-fluid .ribbon .rowribbon .kon_ikon .ikon {
-          display: none; }
         body .container-fluid .ribbon .rowribbon .yd_kon {
           display: default;
           margin: auto;
-          width: 350px; }
+          background-size: 200px; }
+        body .container-fluid .ribbon .rowribbon .kon_ikon {
+          width: 100%; }
         body .container-fluid .ribbon .rowribbon .konrib ul li {
-          display: block; } }
+          display: block; }
+        body .container-fluid .ribbon .rowribbon .kon_ikon .ikon {
+          display: none; } }
       @media screen and (min-width: 651px) {
         body .container-fluid .ribbon .rowribbon .yd_kon_txt {
           text-align: center;
           max-width: 350px;
           margin: auto; }
         body .container-fluid .ribbon .rowribbon .yd_kon {
-          display: none; }
-        body .container-fluid .ribbon .rowribbon .kon_ikon .ikon {
-          display: initial; }
-        body .container-fluid .ribbon .rowribbon .konrib ul li {
-          display: block; }
+          display: default;
+          margin: auto;
+          background-size: 200px; }
         body .container-fluid .ribbon .rowribbon .kon_ikon {
-          width: 100%; } }
+          width: 100%; }
+        body .container-fluid .ribbon .rowribbon .kon_ikon .ikon {
+          display: none; }
+        body .container-fluid .ribbon .rowribbon .konrib ul li {
+          display: block; } }
       @media screen and (min-width: 992px) {
         body .container-fluid .ribbon .rowribbon .yd_kon_txt {
           text-align: left;
@@ -6021,7 +6036,10 @@ body .container-fluid {
           margin: 0px 40px 40px 40px; }
         body .container-fluid .ribbon .rowribbon .kon_ikon .ikon {
           width: 250px;
-          height: 250px; } }
+          height: 250px;
+          display: initial; }
+        body .container-fluid .ribbon .rowribbon .yd_kon {
+          display: none; } }
   body .container-fluid .blog {
     border-radius: 0px;
     margin-bottom: 0px;
@@ -6293,7 +6311,14 @@ body .wrap {
       opacity: 1;
       transform: translate3d(0, 0, 0); }
 body .confill {
-  height: 500px; }
+  padding-top: 40px;
+  padding-bottom: 80px;
+  text-align: center; }
+body .buttfill {
+  min-height: 100px;
+  padding: 4px;
+  padding-top: 28px;
+  margin: auto; }
 body #map {
   width: 100%; }
   @media screen and (max-width: 480px) {
@@ -6312,5 +6337,58 @@ body #map {
     body #map {
       height: 600px;
       max-height: 70vh; } }
+body .kontaktform h2 {
+  font-size: 30px; }
+body .kontaktform .input, body .kontaktform .fullinput {
+  background-color: #eee;
+  padding: 10px 12px 10px 12px;
+  border-style: none;
+  margin: 0px;
+  margin-top: 18px;
+  resize: vertical;
+  outline: none;
+  width: 90%; }
+body .kontaktform .btn-default {
+  background-color: transparent;
+  font-family: "Amatic SC", cursive;
+  border: solid 1px #111;
+  border-radius: 0;
+  font-size: 30px;
+  color: #111;
+  padding: 5px 40px 5px 40px;
+  margin: 0; }
+  body .kontaktform .btn-default:hover {
+    border: solid 2px #91bb41;
+    font-weight: 800;
+    color: #91bb41; }
+body .kontaktform .btn-phone {
+  font-size: 30px;
+  font-family: "Amatic SC", cursive;
+  color: #111; }
+  body .kontaktform .btn-phone:hover {
+    font-weight: 800;
+    color: #91bb41; }
+@media screen and (min-width: 481px) {
+  body .kontaktform .input {
+    width: 90%; }
+  body .kontaktform .fullinput {
+    width: 90%; }
+  body .kontaktform .derp {
+    display: block; }
+  body .kontaktform .righties {
+    margin-left: 0px; } }
+@media screen and (min-width: 651px) {
+  body .kontaktform .btn-phone {
+    font-size: 40px; }
+  body .kontaktform h2 {
+    font-size: 40px; }
+  body .kontaktform .righties {
+    margin-left: 14px; }
+  body .kontaktform .input {
+    width: 300px; }
+  body .kontaktform .fullinput {
+    width: 618px; }
+  body .kontaktform .derp {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

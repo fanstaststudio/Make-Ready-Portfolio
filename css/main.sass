@@ -2,10 +2,10 @@
 @import url(http://fonts.googleapis.com/css?family=Amatic+SC)
 
 // Variables
-$mr-orange: #da8028
 $mr-lightgreen: #9bc544
 $mr-green: #91bb41
 $mr-darkgreen: #547e2b
+$black: #111
 
 $phone-break: 480px
 $tablet-break: 481px
@@ -17,7 +17,15 @@ $funny-font: 'Amatic SC', cursive
 body
 	h1,h2,h3
 		font-family: $funny-font
-		
+	.grey_txt
+		color: #999
+	a
+		text-decoration: none
+		color: $mr-green
+		&:hover
+			color: $mr-lightgreen
+		&:visited
+			color: $mr-green
 	h2
 		font-size: 50px
 		
@@ -188,13 +196,13 @@ body
 	.container-fluid
 		padding-left: 0px
 		padding-right: 0px
-		background-color: #222
 		
 		footer
-			height: 400px
+			height: 380px
 			background-color: #000
 			color: #fff
 			text-align: center
+			padding-top: 40px
 			
 			h1
 				font-size: 40px
@@ -343,7 +351,7 @@ body
 					h2
 						font-size: 40px
 					p
-						margin-top: 25px
+						margin-top: 20px
 					hr
 						margin: auto
 						margin-top: 10px
@@ -357,51 +365,55 @@ body
 						padding-bottom: 40px
 						width: 250px
 				.yd_kon
-					height: 120px
-					width: 112.5px
+					height: 130px
+					width: 100%
+					min-width: 160px
 					margin-right: 5px
 					background-image: url('../images/konikon-phone.svg')
 					background-position: center
-					background-size: 112.5px 120px
 					background-repeat: no-repeat
 				.yd_kon_txt
 					max-width: 90%
 					padding-bottom: 40px
-				.yd_kon_txt p
-					padding-top: 15px
 				@media screen and (min-width: $phone-break)
 					.yd_kon_txt
 						text-align: center
 					.konrib ul li
 						display: block
+					.yd_kon
+						display: default
+						margin: auto
+						background-size: 180px
 				@media screen and (min-width: $tablet-break)
 					.yd_kon_txt
 						text-align: center
 						max-width: 80%
 						margin: auto
-					.kon_ikon .ikon
-						display: none
 					.yd_kon
 						display: default
 						margin: auto
-						width: 350px
+						background-size: 200px
+					.kon_ikon
+						width: 100%
 					.konrib ul li
 						display: block
+					.kon_ikon .ikon
+						display: none
 				@media screen and (min-width: $small-break)
 					.yd_kon_txt
 						text-align: center
 						max-width: 350px
 						margin: auto
-					.yd_kon_txt h2
-						
 					.yd_kon
-						display: none
-					.kon_ikon .ikon
-						display: initial
-					.konrib ul li
-						display: block
+						display: default
+						margin: auto
+						background-size: 200px
 					.kon_ikon
 						width: 100%
+					.kon_ikon .ikon
+						display: none
+					.konrib ul li
+						display: block
 				@media screen and (min-width: 992px)
 					.yd_kon_txt
 						text-align: left
@@ -415,6 +427,9 @@ body
 					.kon_ikon .ikon
 						width: 250px
 						height: 250px
+						display: initial
+					.yd_kon
+						display: none
 		
 
 		.blog
@@ -702,7 +717,14 @@ body
 					transform: translate3d(0, 0, 0)
 		
 	.confill
-		height: 500px
+		padding-top: 40px
+		padding-bottom: 80px
+		text-align: center
+	.buttfill
+		min-height: 100px
+		padding: 4px
+		padding-top: 28px
+		margin: auto
 	#map
 		width: 100%
 		@media screen and (max-width: $phone-break)
@@ -716,4 +738,59 @@ body
 			max-height: 60vh
 		@media screen and (min-width: $large-break)
 			height: 600px
-			max-height: 70vh				
+			max-height: 70vh	
+	.kontaktform
+		h2
+			font-size: 30px
+		.input, .fullinput
+			background-color: #eee
+			padding: 10px 12px 10px 12px
+			border-style: none
+			margin: 0px
+			margin-top: 18px
+			resize: vertical
+			outline: none
+			width: 90%
+		.btn-default
+			background-color: transparent
+			font-family: $funny-font
+			border: solid 1px $black
+			border-radius: 0
+			font-size: 30px
+			color: $black
+			padding: 5px 40px 5px 40px
+			margin: 0
+					
+			&:hover
+				border: solid 2px $mr-green
+				font-weight: 800
+				color: $mr-green
+		.btn-phone
+			font-size: 30px
+			font-family: $funny-font
+			color: $black
+			&:hover
+				font-weight: 800
+				color: $mr-green
+		@media screen and (min-width: $tablet-break)
+			.input 
+				width: 90%
+			.fullinput
+				width: 90%
+			.derp
+				display: block
+			.righties
+				margin-left: 0px
+		@media screen and (min-width: $small-break)
+			.btn-phone
+				font-size: 40px
+			h2
+				font-size: 40px
+			.righties
+				margin-left: 14px
+			.input 
+				width: 300px
+			.fullinput
+				width: 618px
+			.derp
+				display: none

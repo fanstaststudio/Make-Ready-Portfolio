@@ -25,7 +25,7 @@
         var makepos = new google.maps.LatLng(55.487784, 8.446826);
 				var mapOptions = {
           center: makepos,
-          zoom: 15,
+          zoom: 16,
 					disableDefaultUI: true,
 					styles:
 					
@@ -101,9 +101,7 @@
 								</ul>
 							</div>
 						</div>
-				<a name="kontaktankor">
 				<div class="bottomshade"></div>
-				</a>
 	    </div>  
     </div>
 		<!--- End Ribbon --->
@@ -118,34 +116,38 @@
 							</a>
 							</h2>
 						</div>
+					
+					
+					
+<a href="kontakt.html#kontaktankor" type="button" class="btn btn-default"><h1>Kontakt os!</h1></a>
+					
+					
+					
 						<!-- kontakt form -->
-						<form action="mail.php#kontaktankor" method="POST">
-							<input class="input" type="text" name="name" placeholder="* NAVN">
+						<h2>... Eller skriv os en mail !</h2>
+						<form action="mail.php#Anchor" method="POST">
+							<input class="input" type="text" name="name" placeholder="*NAVN">
 							<div class="derp"></div>
 							<input class="input righties" type="text" name="firm" placeholder="FIRMANAVN">
 							<br/>
-							<input class="input" type="text" name="email" placeholder="* EMAIL">
+							<input class="input" type="text" name="email" placeholder="*EMAIL">
 							<div class="derp"></div>
 							<input class="input righties" type="phone" name="phone" placeholder="TELEFON">
 							<br/>
 							<input class="fullinput" type="text" name="website" placeholder="DIN HJEMMESIDE">
 							<br/>
-							<textarea name="message" class="fullinput" placeholder="* BESKED // Hvad går dit projekt ud på?" rows="7" cols="25"></textarea><br />
-							<p class="grey_txt">Felter med en stjerne ( * ) skal udfyldes</p>
+							<textarea name="message" class="fullinput" placeholder="*BESKED // Hvad går dit projekt ud på?" rows="6" cols="25"></textarea><br />
+							<p>Felter med "*" skal udfyldes</p>
 							<div class="buttfill">
 								<input  class="btn btn-default" type="submit" value="Kontakt os !" name="submit">
 							</div>
-							<br/>
-							<p>
-								Hvis du ikke ønsker at udfylde en form <br/> kan du blot send en mail til:<br/>
-								<a href="mailto:mail@makeready.dk">mail@makeready.dk</a>
-							</p>
+							<p>Hvis du ikker ønsker at udfylde en form kan du bare send en mail til:</p>
+							<a href="mailto:mail@makeready.dk">mail@makeready.dk</a>
 						</form>
+					
 					</div>
 				</div>
-			
 			</div>
-		</div>
 		
 		<div class="container-fluid">
 			<div class="row">
