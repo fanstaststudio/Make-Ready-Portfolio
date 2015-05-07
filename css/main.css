@@ -5802,17 +5802,6 @@ body .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
   background-color: #222; }
-  body .container-fluid nav {
-    padding: 10px 0px;
-    background-color: #333333; }
-    body .container-fluid nav .nav-logo h1 {
-      font-size: 16px;
-      margin: 0px 0px;
-      color: #fff; }
-    body .container-fluid nav .nav-categories li {
-      display: inline; }
-      body .container-fluid nav .nav-categories li a {
-        color: #fff; }
   body .container-fluid footer {
     height: 400px;
     background-color: #000;
@@ -5837,6 +5826,9 @@ body .container-fluid {
         body .container-fluid footer .btn-default:hover h1 {
           font-weight: 800;
           color: #91bb41; }
+    body .container-fluid footer p {
+      bottom: 2px;
+      position: relative; }
   body .container-fluid .green {
     color: #91bb41;
     font-weight: bold; }
