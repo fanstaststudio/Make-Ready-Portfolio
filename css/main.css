@@ -5731,9 +5731,10 @@ body .background-box {
     z-index: 2; }
     @media screen and (max-width: 480px) {
       body .background-box .aboutus-text {
+        height: 160px;
         width: 90%;
         margin: 0 auto;
-        top: 45%;
+        top: 60%;
         right: 5%; } }
     @media screen and (min-width: 481px) {
       body .background-box .aboutus-text {
@@ -5749,21 +5750,50 @@ body .background-box {
     @media screen and (min-width: 1051px) {
       body .background-box .aboutus-text {
         width: 500px;
-        top: 65%;
+        top: 70%;
         right: 5%; } }
-    body .background-box .aboutus-text h1 {
+  body .background-box #aboutus_titel {
+    color: #fff; }
+    @media screen and (max-width: 480px) {
+      body .background-box #aboutus_titel {
+        font-size: 70px; } }
+    @media screen and (min-width: 481px) {
+      body .background-box #aboutus_titel {
+        font-size: 70px; } }
+    @media screen and (min-width: 651px) {
+      body .background-box #aboutus_titel {
+        font-size: 100px; } }
+    @media screen and (min-width: 1051px) {
+      body .background-box #aboutus_titel {
+        font-size: 100px; } }
+  body .background-box #aboutus_description {
+    color: #fff;
+    margin-top: 0px; }
+    @media screen and (max-width: 480px) {
+      body .background-box #aboutus_description {
+        font-size: 20px; } }
+    @media screen and (min-width: 481px) {
+      body .background-box #aboutus_description {
+        font-size: 20px; } }
+    @media screen and (min-width: 651px) {
+      body .background-box #aboutus_description {
+        font-size: 30px; } }
+    @media screen and (min-width: 1051px) {
+      body .background-box #aboutus_description {
+        font-size: 30px; } }
+    body .background-box #aboutus_description h1 {
       font-size: 200px;
       color: #fff;
       font-family: "Amatic SC", cursive; }
-    body .background-box .aboutus-text hr {
+    body .background-box #aboutus_description hr {
       height: 4px !important;
       width: 560px;
       background-color: #fff; }
-    body .background-box .aboutus-text h2 {
+    body .background-box #aboutus_description h2 {
       font-size: 100px;
       color: #fff;
       font-family: "Amatic SC", cursive; }
-    body .background-box .aboutus-text h3 {
+    body .background-box #aboutus_description h3 {
       font-size: 25px;
       margin-top: 0px;
       color: #fff;
