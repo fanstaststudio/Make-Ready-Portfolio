@@ -2,6 +2,9 @@
 
 // Variables
 $mr-orange: #da8028
+$mr-lightgreen: #9bc544
+$mr-green: #91bb41
+$mr-darkgreen: #547e2b
 
 $phone-break: 480px
 $tablet-break: 481px
@@ -72,7 +75,145 @@ body
 					display: inline
 					a 
 						color: #fff
-
+		
+		//Ribbon
+		.green
+			color: $mr-green
+			font-weight: bold
+			
+		.ribbon
+			margin-top: -50px
+			width: 100%
+			text-align: center
+			.col-md-4
+				padding: 0px
+			.topshade
+				height: 5px
+				background-color: #000
+				opacity: 0.3
+			.ribcontent
+				background-image: url('../images/cream_pixels.png')
+				padding: 50px 0px 0px 0px 
+			.bottomshade
+				height: 5px
+				background-color: #000
+				opacity: 0.3
+			.ydelse_txt
+				padding: 2px 4px 0px 4px 
+			hr
+				height: 1px
+				background-color:	#111
+				opacity:	0.5
+				width: 100%
+			.yd_tryk, .yd_web, .yd_video
+				height: 100px
+				width: 50px
+				margin-right: 5px
+				background-image: url('../images/trykikon-phone.svg')
+				background-size: 100%
+				background-position: -2px 5px
+				background-repeat: no-repeat
+			.yd_web
+				background-image: url('../images/webikon-phone.svg')
+			.yd_video
+				background-image: url('../images/videoikon-phone.svg')
+			.rowribbon
+				margin: auto
+				ul
+					padding: 0px
+					margin: 0px
+				li
+					padding: 0px
+					margin: 0px
+				@media screen and (max-width: $phone-break)
+					width: 100%
+					.ikon
+						display: none
+					.yd_tryk, .yd_web, .yd_video
+						display: block
+					h2
+						margin: 2px 0px 0px 0px
+						font-size: 16px
+					ul li
+						display: inline-block
+						vertical-align: top
+					.ydelse_txt
+						margin: 0px
+						padding-bottom: 40px
+						text-align: left
+						width: 250px
+					hr
+						margin-left: 0px
+						margin-top: 6px
+						margin-bottom: 6px
+				@media screen and (min-width: $tablet-break)
+					width: 100%
+					.ikon
+						width: 125px
+						height: 125px
+					.yd_tryk, .yd_web, .yd_video
+						display: none
+					h2
+						margin: 2px 0px 0px 0px
+						font-size: 18px
+					p
+						margin-top: 15px
+					ul li
+						display: inline-block
+						vertical-align: top
+						margin-bottom: 20px
+					.ydelse_txt
+						margin: 2px 0px 0px 20px
+						text-align: left
+						padding-bottom: 40px
+						width: 250px
+					hr
+						margin-left: 0px
+						margin-top: 6px
+						margin-bottom: 8px
+				@media screen and (min-width: $small-break)
+					width: 90%
+					max-width: 1200px
+					.ikon
+						width: 160px
+						height: 160px
+					h2
+						font-size: 22px
+					p
+						margin-top: 15px
+					ul li
+						display: inline-block
+						vertical-align: top
+					.ydelse_txt
+						margin: 10px 0px 0px 40px
+						text-align: left
+						padding-bottom: 50px
+						width: 248px
+					hr
+						margin-left: 0px
+						margin-top: 10px
+						margin-bottom: 12px
+				@media screen and (min-width: 992px)
+					.ikon
+						width: 220px
+						height: 220px
+					h2
+						font-size: 22px
+					p
+						margin-top: 25px
+					hr
+						margin: auto
+						margin-top: 10px
+						margin-bottom: 12px
+					ul li
+						display: default
+					.ydelse_txt
+						margin: 0px
+						text-align: center
+						padding-top: 20px
+						padding-bottom: 40px
+						width: 248px
+		
 
 		.blog
 			border-radius: 0px
@@ -85,7 +226,7 @@ body
 				size: cover
 			@media screen and (max-width: $phone-break)
 				height: 300px
-				padding-top: 60px
+				padding-top: 60px2
 			@media screen and (min-width: $tablet-break)
 				height: 300px
 				padding-top: 60px

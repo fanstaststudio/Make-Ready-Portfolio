@@ -5690,6 +5690,144 @@ body .container-fluid {
       display: inline; }
       body .container-fluid nav .nav-categories li a {
         color: #fff; }
+  body .container-fluid .green {
+    color: #91bb41;
+    font-weight: bold; }
+  body .container-fluid .ribbon {
+    margin-top: -50px;
+    width: 100%;
+    text-align: center; }
+    body .container-fluid .ribbon .col-md-4 {
+      padding: 0px; }
+    body .container-fluid .ribbon .topshade {
+      height: 5px;
+      background-color: #000;
+      opacity: 0.3; }
+    body .container-fluid .ribbon .ribcontent {
+      background-image: url("../images/cream_pixels.png");
+      padding: 50px 0px 0px 0px; }
+    body .container-fluid .ribbon .bottomshade {
+      height: 5px;
+      background-color: #000;
+      opacity: 0.3; }
+    body .container-fluid .ribbon .ydelse_txt {
+      padding: 2px 4px 0px 4px; }
+    body .container-fluid .ribbon hr {
+      height: 1px;
+      background-color: #111;
+      opacity: 0.5;
+      width: 100%; }
+    body .container-fluid .ribbon .yd_tryk, body .container-fluid .ribbon .yd_web, body .container-fluid .ribbon .yd_video {
+      height: 100px;
+      width: 50px;
+      margin-right: 5px;
+      background-image: url("../images/trykikon-phone.svg");
+      background-size: 100%;
+      background-position: -2px 5px;
+      background-repeat: no-repeat; }
+    body .container-fluid .ribbon .yd_web {
+      background-image: url("../images/webikon-phone.svg"); }
+    body .container-fluid .ribbon .yd_video {
+      background-image: url("../images/videoikon-phone.svg"); }
+    body .container-fluid .ribbon .rowribbon {
+      margin: auto; }
+      body .container-fluid .ribbon .rowribbon ul {
+        padding: 0px;
+        margin: 0px; }
+      body .container-fluid .ribbon .rowribbon li {
+        padding: 0px;
+        margin: 0px; }
+      @media screen and (max-width: 480px) {
+        body .container-fluid .ribbon .rowribbon {
+          width: 100%; }
+          body .container-fluid .ribbon .rowribbon .ikon {
+            display: none; }
+          body .container-fluid .ribbon .rowribbon .yd_tryk, body .container-fluid .ribbon .rowribbon .yd_web, body .container-fluid .ribbon .rowribbon .yd_video {
+            display: block; }
+          body .container-fluid .ribbon .rowribbon h2 {
+            margin: 2px 0px 0px 0px;
+            font-size: 16px; }
+          body .container-fluid .ribbon .rowribbon ul li {
+            display: inline-block;
+            vertical-align: top; }
+          body .container-fluid .ribbon .rowribbon .ydelse_txt {
+            margin: 0px;
+            padding-bottom: 40px;
+            text-align: left;
+            width: 250px; }
+          body .container-fluid .ribbon .rowribbon hr {
+            margin-left: 0px;
+            margin-top: 6px;
+            margin-bottom: 6px; } }
+      @media screen and (min-width: 481px) {
+        body .container-fluid .ribbon .rowribbon {
+          width: 100%; }
+          body .container-fluid .ribbon .rowribbon .ikon {
+            width: 125px;
+            height: 125px; }
+          body .container-fluid .ribbon .rowribbon .yd_tryk, body .container-fluid .ribbon .rowribbon .yd_web, body .container-fluid .ribbon .rowribbon .yd_video {
+            display: none; }
+          body .container-fluid .ribbon .rowribbon h2 {
+            margin: 2px 0px 0px 0px;
+            font-size: 18px; }
+          body .container-fluid .ribbon .rowribbon p {
+            margin-top: 15px; }
+          body .container-fluid .ribbon .rowribbon ul li {
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 20px; }
+          body .container-fluid .ribbon .rowribbon .ydelse_txt {
+            margin: 2px 0px 0px 20px;
+            text-align: left;
+            padding-bottom: 40px;
+            width: 250px; }
+          body .container-fluid .ribbon .rowribbon hr {
+            margin-left: 0px;
+            margin-top: 6px;
+            margin-bottom: 8px; } }
+      @media screen and (min-width: 651px) {
+        body .container-fluid .ribbon .rowribbon {
+          width: 90%;
+          max-width: 1200px; }
+          body .container-fluid .ribbon .rowribbon .ikon {
+            width: 160px;
+            height: 160px; }
+          body .container-fluid .ribbon .rowribbon h2 {
+            font-size: 22px; }
+          body .container-fluid .ribbon .rowribbon p {
+            margin-top: 15px; }
+          body .container-fluid .ribbon .rowribbon ul li {
+            display: inline-block;
+            vertical-align: top; }
+          body .container-fluid .ribbon .rowribbon .ydelse_txt {
+            margin: 10px 0px 0px 40px;
+            text-align: left;
+            padding-bottom: 50px;
+            width: 248px; }
+          body .container-fluid .ribbon .rowribbon hr {
+            margin-left: 0px;
+            margin-top: 10px;
+            margin-bottom: 12px; } }
+      @media screen and (min-width: 992px) {
+        body .container-fluid .ribbon .rowribbon .ikon {
+          width: 220px;
+          height: 220px; }
+        body .container-fluid .ribbon .rowribbon h2 {
+          font-size: 22px; }
+        body .container-fluid .ribbon .rowribbon p {
+          margin-top: 25px; }
+        body .container-fluid .ribbon .rowribbon hr {
+          margin: auto;
+          margin-top: 10px;
+          margin-bottom: 12px; }
+        body .container-fluid .ribbon .rowribbon ul li {
+          display: default; }
+        body .container-fluid .ribbon .rowribbon .ydelse_txt {
+          margin: 0px;
+          text-align: center;
+          padding-top: 20px;
+          padding-bottom: 40px;
+          width: 248px; } }
   body .container-fluid .blog {
     border-radius: 0px;
     margin-bottom: 0px;
@@ -5701,7 +5839,7 @@ body .container-fluid {
     @media screen and (max-width: 480px) {
       body .container-fluid .blog {
         height: 300px;
-        padding-top: 60px; } }
+        padding-top: 60px2; } }
     @media screen and (min-width: 481px) {
       body .container-fluid .blog {
         height: 300px;
