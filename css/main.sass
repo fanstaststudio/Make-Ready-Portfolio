@@ -227,6 +227,7 @@ body
 			font-weight: bold
 			
 		.ribbon
+			margin-top: -5px
 			width: 100%
 			text-align: center
 			.col-md-4
@@ -234,7 +235,7 @@ body
 			.topshade
 				height: 5px
 				background-color: #000
-				opacity: 0.2
+				opacity: 0.3
 			.ribcontent
 				background-image: url('../images/cream_pixels.png')
 				padding: 50px 0px 0px 0px
@@ -243,7 +244,8 @@ body
 				background-color: #000
 				opacity: 0.3
 			.ydelse_txt
-				padding: 2px 4px 0px 4px 
+				padding: 2px 4px 0px 4px
+				width: 250px
 			hr
 				height: 1px
 				background-color:	#111
@@ -285,7 +287,6 @@ body
 						margin: 0px
 						padding-bottom: 40px
 						text-align: left
-						width: 250px
 					hr
 						margin-left: 0px
 						margin-top: 6px
@@ -293,8 +294,8 @@ body
 				@media screen and (min-width: $tablet-break)
 					width: 100%
 					.ikon
-						width: 125px
-						height: 125px
+						width: 145px
+						height: 145px
 					.yd_tryk, .yd_web, .yd_video
 						display: none
 					h2
@@ -310,7 +311,6 @@ body
 						margin: 2px 0px 0px 20px
 						text-align: left
 						padding-bottom: 40px
-						width: 250px
 					hr
 						margin-left: 0px
 						margin-top: 6px
@@ -322,17 +322,16 @@ body
 						width: 160px
 						height: 160px
 					h2
-						font-size: 30px
+						font-size: 34px
 					p
 						margin-top: 15px
 					ul li
 						display: inline-block
 						vertical-align: top
 					.ydelse_txt
-						margin: 10px 0px 0px 40px
+						margin: 5px 0px 0px 40px
 						text-align: left
 						padding-bottom: 50px
-						width: 250px
 					hr
 						margin-left: 0px
 						margin-top: 10px
@@ -357,6 +356,65 @@ body
 						padding-top: 20px
 						padding-bottom: 40px
 						width: 250px
+				.yd_kon
+					height: 120px
+					width: 112.5px
+					margin-right: 5px
+					background-image: url('../images/konikon-phone.svg')
+					background-position: center
+					background-size: 112.5px 120px
+					background-repeat: no-repeat
+				.yd_kon_txt
+					max-width: 90%
+					padding-bottom: 40px
+				.yd_kon_txt p
+					padding-top: 15px
+				@media screen and (min-width: $phone-break)
+					.yd_kon_txt
+						text-align: center
+					.konrib ul li
+						display: block
+				@media screen and (min-width: $tablet-break)
+					.yd_kon_txt
+						text-align: center
+						max-width: 80%
+						margin: auto
+					.kon_ikon .ikon
+						display: none
+					.yd_kon
+						display: default
+						margin: auto
+						width: 350px
+					.konrib ul li
+						display: block
+				@media screen and (min-width: $small-break)
+					.yd_kon_txt
+						text-align: center
+						max-width: 350px
+						margin: auto
+					.yd_kon_txt h2
+						
+					.yd_kon
+						display: none
+					.kon_ikon .ikon
+						display: initial
+					.konrib ul li
+						display: block
+					.kon_ikon
+						width: 100%
+				@media screen and (min-width: 992px)
+					.yd_kon_txt
+						text-align: left
+						width: 350px
+					.konrib ul li
+						display: inline-block
+					.kon_ikon
+						width: 270px
+						height: 270px
+						margin: 0px 40px 40px 40px
+					.kon_ikon .ikon
+						width: 250px
+						height: 250px
 		
 
 		.blog
@@ -642,4 +700,20 @@ body
 					color: #fff
 					opacity: 1
 					transform: translate3d(0, 0, 0)
-					
+		
+	.confill
+		height: 500px
+	#map
+		width: 100%
+		@media screen and (max-width: $phone-break)
+			height: 280px
+			max-height: 40vh
+		@media screen and (min-width: $tablet-break)
+			height: 320px
+			max-height: 60vh
+		@media screen and (min-width: $small-break)
+			height: 450px
+			max-height: 60vh
+		@media screen and (min-width: $large-break)
+			height: 600px
+			max-height: 70vh				
