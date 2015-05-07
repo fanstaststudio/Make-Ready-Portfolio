@@ -40,10 +40,13 @@ body
 				margin-left: 20px
 			h1
 				margin: 0 0
+
 		.nav-topics
-			margin-top: 15px
+			margin-top: 9px
 			margin-right: 20px
 			float: right
+			font-family: $funny-font
+			font-size: 25px
 			ul 
 				li 
 					display: inline-block
@@ -62,7 +65,15 @@ body
 							color: $mr-green
 							text-decoration: none
 							font-weight: 800
-		
+			@media screen and (max-width: $phone-break)
+				display: none
+			@media screen and (min-width: $tablet-break)
+				display: none
+			@media screen and (min-width: $small-break)
+				display: block
+			@media screen and (min-width: $small-break)
+				display: block
+
 	.background-box
 		position: relative
 		height: 600px
@@ -88,7 +99,7 @@ body
 			width: 100%
 			text-align: center
 			position: absolute
-			top: 40%
+			top: 25%
 			z-index: 2
 			
 			
@@ -129,6 +140,34 @@ body
 					a 
 						color: #fff
 		
+		footer
+			height: 400px
+			background-color: #000
+			color: #fff
+			text-align: center
+			
+			h1
+				font-size: 40px
+				padding-top: 60px
+				padding-bottom: 20px
+				margin: 0
+				
+			.btn-default
+				background-color: #000
+				border: solid 1px white
+				border-radius: 0
+				h1
+					font-size: 30px
+					color: #fff
+					padding: 5px 10px 5px 10px
+					margin: 0
+					
+				&:hover
+					border: solid 2px $mr-green
+					h1
+						font-weight: 800
+						color: $mr-green
+		
 		//Ribbon
 		.green
 			color: $mr-green
@@ -142,7 +181,7 @@ body
 			.topshade
 				height: 5px
 				background-color: #000
-				opacity: 0.3
+				opacity: 0.2
 			.ribcontent
 				background-image: url('../images/cream_pixels.png')
 				padding: 50px 0px 0px 0px

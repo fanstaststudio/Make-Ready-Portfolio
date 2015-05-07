@@ -5659,9 +5659,11 @@ body nav {
     body nav .nav-logo h1 {
       margin: 0 0; }
   body nav .nav-topics {
-    margin-top: 15px;
+    margin-top: 9px;
     margin-right: 20px;
-    float: right; }
+    float: right;
+    font-family: "Amatic SC", cursive;
+    font-size: 25px; }
     body nav .nav-topics ul li {
       display: inline-block;
       padding-right: 20px;
@@ -5679,6 +5681,18 @@ body nav {
           color: #91bb41;
           text-decoration: none;
           font-weight: 800; }
+    @media screen and (max-width: 480px) {
+      body nav .nav-topics {
+        display: none; } }
+    @media screen and (min-width: 481px) {
+      body nav .nav-topics {
+        display: none; } }
+    @media screen and (min-width: 651px) {
+      body nav .nav-topics {
+        display: block; } }
+    @media screen and (min-width: 651px) {
+      body nav .nav-topics {
+        display: block; } }
 body .background-box {
   position: relative;
   height: 600px;
@@ -5706,7 +5720,7 @@ body .background-box {
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 25%;
     z-index: 2; }
     body .background-box .header-text h1 {
       font-size: 200px;
@@ -5735,6 +5749,30 @@ body .container-fluid {
       display: inline; }
       body .container-fluid nav .nav-categories li a {
         color: #fff; }
+  body .container-fluid footer {
+    height: 400px;
+    background-color: #000;
+    color: #fff;
+    text-align: center; }
+    body .container-fluid footer h1 {
+      font-size: 40px;
+      padding-top: 60px;
+      padding-bottom: 20px;
+      margin: 0; }
+    body .container-fluid footer .btn-default {
+      background-color: #000;
+      border: solid 1px white;
+      border-radius: 0; }
+      body .container-fluid footer .btn-default h1 {
+        font-size: 30px;
+        color: #fff;
+        padding: 5px 10px 5px 10px;
+        margin: 0; }
+      body .container-fluid footer .btn-default:hover {
+        border: solid 2px #91bb41; }
+        body .container-fluid footer .btn-default:hover h1 {
+          font-weight: 800;
+          color: #91bb41; }
   body .container-fluid .green {
     color: #91bb41;
     font-weight: bold; }
@@ -5746,7 +5784,7 @@ body .container-fluid {
     body .container-fluid .ribbon .topshade {
       height: 5px;
       background-color: #000;
-      opacity: 0.3; }
+      opacity: 0.2; }
     body .container-fluid .ribbon .ribcontent {
       background-image: url("../images/cream_pixels.png");
       padding: 50px 0px 0px 0px; }
