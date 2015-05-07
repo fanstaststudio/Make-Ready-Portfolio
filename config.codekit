@@ -1456,12 +1456,12 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Rasmus Tillgaard",
+"lastSavedByUser": "mads Lind",
 "manualImportLinks": {
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "Make Ready Web",
+	"displayValue": "Make-Ready-Portfolio",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "compass_orange"
 	},
@@ -2086,7 +2086,7 @@
 	"markdownAutoOutputPathReplace2": "",
 	"markdownAutoOutputPathStyle": 0,
 	"markdownCriticStyle": 0,
-	"markdownEnableFootnotes": 0,
+	"markdownEnableFootnotes": 1,
 	"markdownEnableLabels": 1,
 	"markdownEnableSmartQuotes": 1,
 	"markdownEscapeLineBreaks": 0,
