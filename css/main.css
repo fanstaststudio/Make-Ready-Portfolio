@@ -5722,16 +5722,50 @@ body .background-box {
     position: absolute;
     top: 25%;
     z-index: 2; }
-    body .background-box .header-text h1 {
+  body .background-box .aboutus-text {
+    background-color: #222;
+    height: 200px;
+    position: absolute;
+    text-align: center;
+    margin-top: 200px;
+    z-index: 2; }
+    @media screen and (max-width: 480px) {
+      body .background-box .aboutus-text {
+        width: 90%;
+        margin: 0 auto;
+        top: 45%;
+        right: 5%; } }
+    @media screen and (min-width: 481px) {
+      body .background-box .aboutus-text {
+        width: 90%;
+        margin: 0 auto;
+        top: 65%;
+        right: 5%; } }
+    @media screen and (min-width: 651px) {
+      body .background-box .aboutus-text {
+        width: 70%;
+        top: 65%;
+        right: 15%; } }
+    @media screen and (min-width: 1051px) {
+      body .background-box .aboutus-text {
+        width: 500px;
+        top: 65%;
+        right: 5%; } }
+    body .background-box .aboutus-text h1 {
       font-size: 200px;
       color: #fff;
       font-family: "Amatic SC", cursive; }
-    body .background-box .header-text hr {
+    body .background-box .aboutus-text hr {
       height: 4px !important;
       width: 560px;
       background-color: #fff; }
-    body .background-box .header-text h2 {
+    body .background-box .aboutus-text h2 {
       font-size: 100px;
+      color: #fff;
+      font-family: "Amatic SC", cursive; }
+    body .background-box .aboutus-text h3 {
+      font-size: 25px;
+      margin-top: 0px;
       color: #fff;
       font-family: "Amatic SC", cursive; }
 body .container-fluid {
